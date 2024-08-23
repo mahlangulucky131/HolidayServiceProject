@@ -1,0 +1,199 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e309f6ea-ddbb-479a-8ff3-b393643d6a3d\",\"columns\":[{\"UUID\":\"c3c292c3-c8fa-4311-884a-2291af75113b\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "bannerAlignment" : "center",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "left",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "left",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 50,
+                "contentBgColor" : "rgba(179, 208, 244, 0.43)",
+                "contentPadding" : "large",
+                "contentPosition" : "center left",
+                "contentWidth" : 25,
+                "height" : 450,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"{!Site.basePath}/assets/img/marketing-banner-1.png\",\"altText\":\"pulse\",\"contentKey\":\"\"}}",
+                "imagePosition" : "center center",
+                "isBannerLink" : false,
+                "overlayColor" : "",
+                "showButtons" : true,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "center",
+                "width" : 100
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "rgba(255, 255, 255, 0)",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Holiday Service ",
+                    "textAlign" : "left",
+                    "textColor" : "rgb(255, 255, 255)",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-large\", \"headingTag\": \"h1\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "01e5b4ea-2ddb-428a-af2a-f5ef3a549e1d",
+                  "type" : "component"
+                } ],
+                "id" : "de07d6d5-a3fc-411d-b5de-29770e7e248e",
+                "name" : "contentRegion",
+                "title" : "Content Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Learn More",
+                    "type" : "primary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "0576a0ae-1124-4a76-83bc-6b91e8433664",
+                  "type" : "component"
+                } ],
+                "id" : "af5121cc-97f3-4071-a5b5-87bef90f084b",
+                "name" : "bannerPrimaryButton",
+                "title" : "Primary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "cbce52bc-1c24-4e75-9864-f0724560d5ac",
+                  "type" : "component"
+                } ],
+                "id" : "fcb1cf71-0fff-4836-b981-98d26b021075",
+                "name" : "bannerSecondaryButton",
+                "title" : "bannerSecondaryButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "d26d88d4-cda4-4830-b01d-5f397c7c5f52",
+                  "type" : "component"
+                } ],
+                "id" : "48929a29-fb34-43ed-b00c-fa2c472c921f",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_content_layout:banner",
+              "id" : "40a20031-8123-45e2-85f2-64ad159d71e3",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "c:holidaySearch",
+              "id" : "61fcef1f-3a15-4cf0-8157-72b2786ad361",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "x-large",
+                "paddingVertical" : "none",
+                "text" : "The above service provides available banking holidays for a given id number year.",
+                "textAlign" : "center",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h3\"}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "f1622dca-0c0a-4382-ab6d-9150c12a588d",
+              "type" : "component"
+            } ],
+            "id" : "c3c292c3-c8fa-4311-884a-2291af75113b",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e309f6ea-ddbb-479a-8ff3-b393643d6a3d",
+          "type" : "component"
+        } ],
+        "id" : "369202eb-8fb1-46e1-bd3d-8a371a7ef0f9",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "8b2bb95b-2089-4897-b583-b0c385a3c20e",
+          "type" : "component"
+        } ],
+        "id" : "0f423c6e-c2a6-4e92-aff6-36599aae23da",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "37e42ec2-13c7-4cf8-b4ab-69c26f63d7bf",
+      "type" : "component"
+    },
+    "contentOperations" : {
+      "operations" : [ {
+        "targetId" : "40a20031-8123-45e2-85f2-64ad159d71e3",
+        "isHiddenOnOperationSuccess" : true,
+        "isActive" : true,
+        "rule" : {
+          "name" : "336a3ad8-d694-418b-9ebc-a06d7de595c8",
+          "description" : "",
+          "criteriaType" : "AllCriteriaMatch",
+          "expressionCriteria" : [ {
+            "resource" : "User.isGuest",
+            "operator" : "Equal",
+            "value" : true,
+            "criterionNumber" : 1
+          } ]
+        }
+      } ]
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  }
+}
