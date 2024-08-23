@@ -1,0 +1,37 @@
+<template>
+
+    <lightning-card>
+        <div class="hero">
+            <img src={myPictureUrl} style="max-height: 350px" alt="South african image" />
+            <h1>Know your South African holidays.</h1>
+            <p>This site provides a range of holidays given a south african id as an input parameter in the text input below:</p>
+        </div>
+    </lightning-card>
+
+    <lightning-card>
+        
+        <lightning-input type="search" label="ID Number" value={searchTerm} onchange={handleOnchange} max-length="13"></lightning-input>
+        <lightning-button label="Search" onclick={handleButtonClick} disabled={isValidNum}></lightning-button>
+
+        <div if:true= {data}>
+            <lightning-card>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered" width="100%">
+                    <thead>
+                        <th>Holiday Name</th>
+                        <th>Holiday Description</th>
+                        <th>Holiday Type</th>
+                    </thead>
+                    <tbody>
+                        <template for:each={data} for:item="item">
+                            <tr key ={item.id}>
+                                <td><p>{item.name}</p></td>
+                                <td><p>{item.description}</p></td>
+                                <td><p>{item.type}</p></td>
+                            </tr>
+                        </template>
+                    </tbody>
+            </table>
+        </lightning-card>
+        </div>
+    </lightning-card>
+</template>

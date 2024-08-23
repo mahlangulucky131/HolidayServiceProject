@@ -1,0 +1,16 @@
+table td {
+    word-wrap:break-word; border:solid 1px #fab; width:auto; 
+}
+table{
+    width:100%;
+}
+img{
+    width:100%;
+}
+h1{
+    color:brown;
+    size: 30px;
+}
+p{
+    word-wrap:break-word;
+}

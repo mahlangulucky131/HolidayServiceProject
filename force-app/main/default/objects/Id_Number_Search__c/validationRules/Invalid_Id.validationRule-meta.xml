@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invalid_Id</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNUMBER( ID_Number__c ))</errorConditionFormula>
+    <errorMessage>Id Number invalid, please enter a valid id number</errorMessage>
+</ValidationRule>

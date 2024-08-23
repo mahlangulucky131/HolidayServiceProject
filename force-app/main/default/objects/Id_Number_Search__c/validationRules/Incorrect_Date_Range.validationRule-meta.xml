@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incorrect_Date_Range</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( VALUE(RIGHT(LEFT(ID_Number__c,4), 2)) &gt; 12 , VALUE(RIGHT(LEFT(ID_Number__c,6), 2)) &gt; 31   )</errorConditionFormula>
+    <errorMessage>Please correct id number as month/date range is out of boundaries</errorMessage>
+</ValidationRule>
