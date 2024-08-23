@@ -24,6 +24,7 @@ public with sharing class CalendarificWrapperRetriever {
 	catch(Exception e) {
 		system.debug('Exception: '+e.getMessage());
 	}
+    // If the request is successful, parse the JSON response.
     if(response.getStatusCode() == 200) {
         Related_Holiday__c pHoliday;
         List<Related_Holiday__c> pHolidays = new List<Related_Holiday__c>();
@@ -37,7 +38,6 @@ public with sharing class CalendarificWrapperRetriever {
             System.debug(holiday.type);
         }
     }   
-
     System.debug('queriedHolidays: '+ queriedHolidays.size());
 
     return JSON.serialize(queriedHolidays);
